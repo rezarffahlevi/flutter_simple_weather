@@ -54,7 +54,7 @@ class _MyHomePageState extends State<MyHomePage> {
   void _onTap() async {
     var client = http.Client();
     try {
-      var param = {"q": _lokasi, "APPID": "8f35d817c01935e6cc67244c3191c0de"};
+      var param = {"q": _lokasi, "APPID": "YOUR_API_KEY"};
       var uri = Uri.https('api.openweathermap.org', '/data/2.5/weather', param);
       var uriResponse = await client.get(uri);
       setState(() {
