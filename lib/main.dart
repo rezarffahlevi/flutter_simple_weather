@@ -122,12 +122,10 @@ class _MyHomePageState extends State<MyHomePage> {
                         border: Border.all(width: 1, color: Colors.black),
                       ),
                       child: Image.network(
-                        _weather.name == null
-                            ? 'https://www.bmkg.go.id/asset/img/logo/logo-bmkg.png'
-                            : 'https://www.bmkg.go.id/asset/img/weather_icon/ID/berawan-am.png',
+                        'https://w7.pngwing.com/pngs/624/6/png-transparent-weather-forecasting-ios-7-weather-blue-text-weather-icon.png',
                         width: 60,
                         height: 60,
-                        fit: BoxFit.fill,
+                        fit: BoxFit.fitWidth,
                       ),
                     ),
                     Expanded(
