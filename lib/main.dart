@@ -138,7 +138,9 @@ class _MyHomePageState extends State<MyHomePage> {
                           children: [
                             Text(
                               'Wind Speed : ' +
-                                  _weather?.wind?.speed.toString(),
+                                  (_weather?.wind == null
+                                      ? '-'
+                                      : _weather.wind?.speed.toString()),
                               style: TextStyle(
                                 fontSize: 18,
                                 fontWeight: FontWeight.normal,
@@ -146,14 +148,19 @@ class _MyHomePageState extends State<MyHomePage> {
                               textAlign: TextAlign.left,
                             ),
                             Text(
-                              'Temp : ' + _weather?.main?.temp.toString(),
+                              'Temp : ' +
+                                  (_weather?.main == null
+                                      ? '-'
+                                      : _weather?.main?.temp.toString()),
                               style: TextStyle(
                                   fontSize: 18, fontWeight: FontWeight.normal),
                               textAlign: TextAlign.left,
                             ),
                             Text(
                               'Humadity : ' +
-                                  _weather?.main?.humidity.toString(),
+                                  (_weather?.main == null
+                                      ? '-'
+                                      : _weather?.main?.humidity.toString()),
                               style: TextStyle(
                                   fontSize: 18, fontWeight: FontWeight.normal),
                               textAlign: TextAlign.left,
