@@ -124,7 +124,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       child: Image.network(
                         _weather.name == null
                             ? 'https://www.bmkg.go.id/asset/img/logo/logo-bmkg.png'
-                            : 'https://www.bmkg.go.id/asset/img/weather_icon/ID/berawan-am.png',
+                            : 'https://www.bmkg.go.id/asset/img/weather_icon/EN/partly cloudy-am.png',
                         width: 60,
                         height: 60,
                         fit: BoxFit.fill,
